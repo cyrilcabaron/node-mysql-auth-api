@@ -1,0 +1,88 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "cyrilcabaron",
+    "dateExported": "2023-04-25T13:22:01.300Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e901b4a0-ec01-49fa-9135-e0182d3ded4b",
+            "colId": "1215e0dd-df8a-4035-938c-3b88f666365c",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:4000/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-25T13:12:05.514Z",
+            "modified": "2023-04-25T13:12:05.514Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"firstName\": \"saysay\",\r\n    \"lastName\": \"cabaron\",\r\n    \"username\": \"jimaebabe\",\r\n    \"password\": \"123456\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7de65186-8c6c-4902-9e1c-6fa295f15e81",
+            "colId": "1215e0dd-df8a-4035-938c-3b88f666365c",
+            "containerId": "",
+            "name": "authenticate",
+            "url": "http://localhost:4000/users/authenticate",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-25T13:15:52.125Z",
+            "modified": "2023-04-25T13:15:52.125Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"jimaebabe\",\n    \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "af90aea9-d3c4-47c1-99c8-19fe8c077e31",
+            "colId": "1215e0dd-df8a-4035-938c-3b88f666365c",
+            "containerId": "",
+            "name": "get all users",
+            "url": "http://localhost:4000/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-25T13:18:15.460Z",
+            "modified": "2023-04-25T13:18:15.460Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImlhdCI6MTY4MjQyODUyNCwiZXhwIjoxNjgzMDMzMzI0fQ.k-6LiE2ABZ-EtVyvyzbxkblOolCbgHqu7vTYhNebw2M"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f39973c7-d24b-46f6-9a66-298cd0413589",
+            "colId": "1215e0dd-df8a-4035-938c-3b88f666365c",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:4000/users/4",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-04-25T13:21:55.932Z",
+            "modified": "2023-04-25T13:21:55.932Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\": \"Foo\",\n    \"lastName\": \"Bar\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImlhdCI6MTY4MjQyODUyNCwiZXhwIjoxNjgzMDMzMzI0fQ.k-6LiE2ABZ-EtVyvyzbxkblOolCbgHqu7vTYhNebw2M"
+            },
+            "tests": []
+        }
+    ]
+}
